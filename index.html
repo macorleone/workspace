@@ -4,11 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <title>入会申し込み</title>
+
+<link rel="stylesheet" href="css/sanitize.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<h1 style="font-size: 50px; margin: 50px;">入会申し込み</h1>
+<div class="content">
+<h1>入会申し込み</h1>
 <p>入会するには次のフォームにご記入ください</p>
-<p>メールアドレス：<input type="email" name="myma" value="info@"></p>
-<button type="submit">送信</button>
+<div class="control">
+<label for="mymail">メールアドレス　<span class="required">必須</span></label>
+<input id="mymail" type="email" name="myma" value="info@">
+</div>
+<div class="control">
+<label for="password">パスワード　<span class="required">必須</span></label>
+<input id="password" type="password" name="password">
+</div>
+<div class="control">
+<button type="submit">登録する</button>
+</div>
+</div>
 </body>
 </html>
